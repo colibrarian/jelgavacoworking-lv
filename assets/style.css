@@ -207,17 +207,24 @@
       .float-btn{ width:46px; height:46px; }
     }
 
-    /* ── Cookie Banner ── */
+    /* ── Cookie Consent Modal (blocking, full-screen) ── */
     #cookie-banner{
-      position:fixed; bottom:0; left:0; right:0; z-index:200;
-      background:#fff; border-top:1px solid var(--border);
-      padding:16px 22px; display:flex; align-items:center;
-      gap:14px; flex-wrap:wrap; box-shadow:0 -4px 20px rgba(0,0,0,.06);
-      transform: translateY(0); transition: transform .3s ease;
+      position:fixed; inset:0; z-index:400;
+      background:rgba(0,0,0,.55); backdrop-filter:blur(6px);
+      display:flex; align-items:center; justify-content:center;
+      padding:20px; opacity:1; transition:opacity .25s ease;
     }
-    #cookie-banner.hidden{ transform: translateY(120%); pointer-events:none; }
-    #cookie-banner p{ margin:0; font-size:13px; color:var(--muted); flex:1; min-width:200px; line-height:1.5; }
-    #cookie-banner .cb-actions{ display:flex; gap:8px; flex-shrink:0; }
+    #cookie-banner.hidden{ opacity:0; pointer-events:none; }
+    #cookie-banner .cookie-box{
+      background:#fff; border-radius:var(--radius); padding:30px;
+      max-width:440px; width:100%; box-shadow:var(--shadow);
+    }
+    #cookie-banner .cookie-box h3{ margin:0 0 12px; font-size:18px; }
+    #cookie-banner p{ margin:0 0 20px; font-size:14px; color:var(--muted); line-height:1.6; }
+    #cookie-banner .cb-actions{ display:flex; flex-direction:column; gap:10px; }
+    #cookie-banner .cb-actions .btn{ width:100%; }
+    #cookie-banner .cb-more{ display:block; text-align:center; margin-top:14px; font-size:13px; color:var(--muted); text-decoration:underline; text-underline-offset:3px; }
+    #cookie-banner .cb-more:hover{ color:var(--text); }
 
     /* ── Privacy Modal ── */
     .modal-overlay{
