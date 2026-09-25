@@ -760,12 +760,15 @@ Nosūtīt
 <!-- ══════════════════════════════════════
        COOKIE BANNER
   ══════════════════════════════════════ -->
-  <div aria-label="Cookie notice" id="cookie-banner" role="region">
-    <p>Mēs izmantojam sīkdatnes vietnes darbībai un — ar jūsu piekrišanu — arī, lai novērtētu Instagram/Facebook reklāmas efektivitāti (Meta Pixel). Reklāmas sīkdatnes tiek iestatītas tikai tad, ja tam piekrītat.</p>
-    <div class="cb-actions">
-      <a class="btn" href="/lv/privatuma-politika/">Uzzināt vairāk</a>
-      <button class="btn" id="cookie-necessary">Tikai nepieciešamās</button>
-      <button class="btn btn-primary" id="cookie-accept-all">Piekrītu visām</button>
+  <div aria-label="Cookie notice" id="cookie-banner" role="dialog" aria-modal="true">
+    <div class="cookie-box">
+      <h3>Sīkdatņu izvēle</h3>
+      <p>Mēs izmantojam sīkdatnes vietnes darbībai un — ar jūsu piekrišanu — arī, lai novērtētu Instagram/Facebook reklāmas efektivitāti (Meta Pixel). Reklāmas sīkdatnes tiek iestatītas tikai tad, ja tam piekrītat.</p>
+      <div class="cb-actions">
+        <button class="btn" id="cookie-necessary">Tikai nepieciešamās</button>
+        <button class="btn" id="cookie-accept-all">Piekrītu visām</button>
+      </div>
+      <a class="cb-more" href="/lv/privatuma-politika/">Uzzināt vairāk</a>
     </div>
   </div>
   <!-- ══════════════════════════════════════
@@ -861,8 +864,8 @@ Nosūtīt
       });
     }
 
-    function showBanner(){ banner.classList.remove('hidden'); }
-    function hideBanner(){ banner.classList.add('hidden'); }
+    function showBanner(){ banner.classList.remove('hidden'); document.body.style.overflow='hidden'; }
+    function hideBanner(){ banner.classList.add('hidden'); document.body.style.overflow=''; }
 
     const savedConsent = localStorage.getItem(CONSENT_KEY);
     if(savedConsent === 'all'){
