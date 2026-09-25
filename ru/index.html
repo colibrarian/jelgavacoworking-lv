@@ -760,12 +760,15 @@ Jelgava Coworking Space — это больше, чем рабочее мест�
 <!-- ══════════════════════════════════════
        COOKIE BANNER
   ══════════════════════════════════════ -->
-  <div aria-label="Cookie notice" id="cookie-banner" role="region">
-    <p>Мы используем cookie для работы сайта и — с вашего согласия — также для оценки эффективности рекламы в Instagram/Facebook (Meta Pixel). Рекламные cookie устанавливаются только при вашем согласии.</p>
-    <div class="cb-actions">
-      <a class="btn" href="/ru/politika-konfidencialnosti/">Подробнее</a>
-      <button class="btn" id="cookie-necessary">Только необходимые</button>
-      <button class="btn btn-primary" id="cookie-accept-all">Принять все</button>
+  <div aria-label="Cookie notice" id="cookie-banner" role="dialog" aria-modal="true">
+    <div class="cookie-box">
+      <h3>Настройка cookie</h3>
+      <p>Мы используем cookie для работы сайта и — с вашего согласия — также для оценки эффективности рекламы в Instagram/Facebook (Meta Pixel). Рекламные cookie устанавливаются только при вашем согласии.</p>
+      <div class="cb-actions">
+        <button class="btn" id="cookie-necessary">Только необходимые</button>
+        <button class="btn" id="cookie-accept-all">Принять все</button>
+      </div>
+      <a class="cb-more" href="/ru/politika-konfidencialnosti/">Подробнее</a>
     </div>
   </div>
   <!-- ══════════════════════════════════════
@@ -861,8 +864,8 @@ Jelgava Coworking Space — это больше, чем рабочее мест�
       });
     }
 
-    function showBanner(){ banner.classList.remove('hidden'); }
-    function hideBanner(){ banner.classList.add('hidden'); }
+    function showBanner(){ banner.classList.remove('hidden'); document.body.style.overflow='hidden'; }
+    function hideBanner(){ banner.classList.add('hidden'); document.body.style.overflow=''; }
 
     const savedConsent = localStorage.getItem(CONSENT_KEY);
     if(savedConsent === 'all'){
