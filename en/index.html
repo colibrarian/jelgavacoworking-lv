@@ -862,6 +862,8 @@ Send
         'ad_personalization': 'granted',
         'analytics_storage': 'granted'
       });
+      // Explicit signal for a GTM Custom Event trigger (works regardless of GTM UI version)
+      window.dataLayer.push({ event: 'marketing_consent_granted' });
     }
 
     function showBanner(){ banner.classList.remove('hidden'); document.body.style.overflow='hidden'; }
