@@ -222,7 +222,7 @@
     #cookie-banner .cookie-box h3{ margin:0 0 12px; font-size:18px; }
     #cookie-banner p{ margin:0 0 20px; font-size:14px; color:var(--muted); line-height:1.6; }
     #cookie-banner .cb-actions{ display:flex; flex-direction:column; gap:10px; }
-    #cookie-banner .cb-actions .btn{ width:100%; }
+    #cookie-banner .cb-actions .btn{ width:100%; border:2px solid #d92d20; }
     #cookie-banner .cb-more{ display:block; text-align:center; margin-top:14px; font-size:13px; color:var(--muted); text-decoration:underline; text-underline-offset:3px; }
     #cookie-banner .cb-more:hover{ color:var(--text); }
 
