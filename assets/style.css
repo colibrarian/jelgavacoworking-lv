@@ -444,7 +444,8 @@
       .gallery-dots{ display:flex; }
 
       /* day pass + meeting room side by side, no meeting photo */
-      .extras{ display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:14px; }
+      .extras{ display:grid; gap:14px; margin-top:14px; }
+      .extras > .passes{ margin-top:0; }
       .extras > .panel{ margin-top:0 !important; }
       .extras h2{ font-size:22px; }
       .meeting-photos{ display:none; }
@@ -466,7 +467,6 @@
       .cards .card{ scroll-snap-align:center; }
       .cards-dots{ display:flex; margin-top:0; }
 
-      .extras{ grid-template-columns:1fr; }
 
       /* FAQ: first 5, then "show all" */
       .faq-list.collapsed .faq-item:nth-child(n+6){ display:none; }
@@ -494,3 +494,16 @@
       .kam-desc{ display:none; }
       .kam-card.open .kam-desc{ display:block; animation:jcw-fade .3s ease; }
     }
+
+    /* ── Day pass + 24-hour pass ── */
+    .passes{ display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:14px; }
+    .pass{ display:flex; flex-direction:column; }
+    .pass h2{ margin:0 0 2px; }
+    .pass-price{ font-size:26px; font-weight:600; letter-spacing:-.3px; margin:4px 0 10px; }
+    .pass-price small{ font-size:14px; color:var(--muted); font-weight:400; }
+    .pass .pass-cta{ margin-top:auto; padding-top:16px; }
+    /* 24h pass: same red accent language as the featured Studio card */
+    .pass-24{ border-color:rgba(136,0,2,.25); box-shadow:0 14px 44px rgba(136,0,2,.10); }
+    .pass-24 .kicker{ color:var(--accent); }
+    .pass-24 .pill:first-child{ border-color:rgba(136,0,2,.25); color:var(--accent); }
+    @media (max-width: 650px){ .passes{ grid-template-columns:1fr; } }
