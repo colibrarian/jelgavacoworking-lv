@@ -194,48 +194,138 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Is Jelgava Coworking Space open 24/7?",
+      "name": "What is the difference between the Focus and Studio packages?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, Studio and Business plan subscribers can use the coworking space at any time, 7 days a week, including weekends and holidays."
+        "text": "Focus (€80/mo) gives you 10 days a month, Mon–Fri 9:00–18:00, a hot desk, internet, coffee and tea, plus one guest day — you can bring someone along for free. Unused days do not roll over to the next month. Studio (€140/mo) gives you 24/7 access with no day limit, a hot desk, internet, coffee and tea."
       }
     },
     {
       "@type": "Question",
-      "name": "How much does coworking cost in Jelgava?",
+      "name": "Can I come at any time?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Jelgava Coworking Space offers several packages: Focus (€80/mo, 10 days), Flow (€110/mo, unlimited Mon–Fri), Studio (€140/mo, 24/7 hot desk), Business (€170/mo, 24/7 fixed desk + legal address). Day pass — €15."
+        "text": "24/7 access, 7 days a week, is included in the Studio and Business packages; entry is by door code. Focus, Flow and the day pass are valid on weekdays from 9:00 to 18:00. Staff are usually on site from 10:00 to 18:00."
       }
     },
     {
       "@type": "Question",
-      "name": "Where is Jelgava Coworking Space located?",
+      "name": "Can I leave my things here?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Jelgava Coworking Space is located at Kazarmes iela 16B, Jelgava, Latvia — also convenient for residents of Ozolnieki, Dobele, Olaine, and Mārupe."
+        "text": "There are no lockers. With the Business package you have your own fixed desk, and members leave their computers right on it. In the other packages desks are shared (hot desk), so please take your things with you at the end of the day."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I rent a meeting room in Jelgava?",
+      "name": "Do I need to book a day pass in advance?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, Jelgava Coworking Space offers meeting room rental — €15 per hour or €20 for two hours. Suitable for meetings, video calls, and small presentations."
+        "text": "Yes, ideally at least a day ahead. In urgent cases, call or message us on WhatsApp: +371 2057 9106. We speak Latvian, Russian and English."
       }
     },
     {
       "@type": "Question",
-      "name": "Is Jelgava Coworking Space suitable for developers and freelancers?",
+      "name": "Is there a free trial day?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, the space is well suited for IT specialists, developers, photographers, videographers, and other digital freelancers — reliable high-speed internet, a quiet atmosphere, and flexible access hours."
+        "text": "There is no free trial day. To try the space, get a day pass for €15. The most affordable monthly package is Focus — 10 days for €80."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does renewal work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Memberships are monthly. A couple of days before yours ends, we check whether you'd like to renew and send a new invoice. There are no automatic charges."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer discounts?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes: pay for six months upfront and get 20% off any package."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you invoice my company?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we issue invoices to companies. All prices include VAT (PVN)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I register my company at your address?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, the legal address is included in the Business package and works for registering both an SIA and an IK. We let you know about incoming mail by phone or email."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there parking?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, there are 5 free parking spaces for coworking members."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I take calls?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We keep the shared area quiet, and there is a separate room for calls and video meetings."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What equipment is available?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Internet of around 100 Mbps, monitors, a printer and scanner (up to 10 pages a day, more by arrangement), a fridge, a microwave, coffee and tea. Everything is available to all members."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many desks are there and what is the atmosphere like?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "13 desks in a quiet space built for focused work. To keep it quiet, children and pets are not allowed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I host my own event at your space?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. There is a room for up to 15 people and a projector. Terms and pricing on request."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I find you?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Kazarmes iela 16B, Jelgava. The building has two entrances: ours is under the Jelgava Coworking Space sign; the other leads to our neighbours at Miniland. The nearest shops, Maxima and Citro, are about a 10-minute walk away."
       }
     }
   ]
 }
   </script>
 <link rel="stylesheet" href="/assets/style.css" />
+<style>
+  /* FAQ */
+  .faq-list{ display:grid; gap:10px; margin-top:18px; max-width:860px; }
+  .faq-item{ border:1px solid var(--line, rgba(127,127,127,.25)); border-radius:14px; padding:0 18px; }
+  .faq-item summary{ cursor:pointer; list-style:none; position:relative; padding:16px 32px 16px 0; font-weight:500; line-height:1.4; }
+  .faq-item summary::-webkit-details-marker{ display:none; }
+  .faq-item summary::after{ content:"+"; position:absolute; right:0; top:12px; font-size:22px; color:var(--accent); }
+  .faq-item[open] summary::after{ content:"\2212"; }
+  .faq-item p{ margin:0 0 16px; color:var(--muted); line-height:1.7; }
+</style>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -254,6 +344,7 @@
 <a class="navlink" href="#atmosfera">Atmosphere</a>
 <a class="navlink" href="#kam">Who it's for</a>
 <a class="navlink" href="#paketes">Packages</a>
+<a class="navlink" href="#buj">FAQ</a>
 <a class="navlink" href="#kontakti">Contacts</a>
 </nav>
 <div class="actions">
@@ -632,6 +723,77 @@ Book now
 </div>
 </div>
 </div>
+</div>
+</div>
+</section>
+<!-- ══════════════════════════════════════
+         FAQ
+    ══════════════════════════════════════ -->
+<section id="buj">
+<div class="wrap">
+<h2>Frequently asked questions</h2>
+<p class="sub" style="max-width:640px">Quick answers about packages, access, payment and finding us.</p>
+<div class="faq-list">
+<details class="faq-item">
+<summary>What is the difference between the Focus and Studio packages?</summary>
+<p>Focus (€80/mo) gives you 10 days a month, Mon–Fri 9:00–18:00, a hot desk, internet, coffee and tea, plus one guest day — you can bring someone along for free. Unused days do not roll over to the next month. Studio (€140/mo) gives you 24/7 access with no day limit, a hot desk, internet, coffee and tea.</p>
+</details>
+<details class="faq-item">
+<summary>Can I come at any time?</summary>
+<p>24/7 access, 7 days a week, is included in the Studio and Business packages; entry is by door code. Focus, Flow and the day pass are valid on weekdays from 9:00 to 18:00. Staff are usually on site from 10:00 to 18:00.</p>
+</details>
+<details class="faq-item">
+<summary>Can I leave my things here?</summary>
+<p>There are no lockers. With the Business package you have your own fixed desk, and members leave their computers right on it. In the other packages desks are shared (hot desk), so please take your things with you at the end of the day.</p>
+</details>
+<details class="faq-item">
+<summary>Do I need to book a day pass in advance?</summary>
+<p>Yes, ideally at least a day ahead. In urgent cases, call or message us on WhatsApp: +371 2057 9106. We speak Latvian, Russian and English.</p>
+</details>
+<details class="faq-item">
+<summary>Is there a free trial day?</summary>
+<p>There is no free trial day. To try the space, get a day pass for €15. The most affordable monthly package is Focus — 10 days for €80.</p>
+</details>
+<details class="faq-item">
+<summary>How does renewal work?</summary>
+<p>Memberships are monthly. A couple of days before yours ends, we check whether you&#x27;d like to renew and send a new invoice. There are no automatic charges.</p>
+</details>
+<details class="faq-item">
+<summary>Do you offer discounts?</summary>
+<p>Yes: pay for six months upfront and get 20% off any package.</p>
+</details>
+<details class="faq-item">
+<summary>Can you invoice my company?</summary>
+<p>Yes, we issue invoices to companies. All prices include VAT (PVN).</p>
+</details>
+<details class="faq-item">
+<summary>Can I register my company at your address?</summary>
+<p>Yes, the legal address is included in the Business package and works for registering both an SIA and an IK. We let you know about incoming mail by phone or email.</p>
+</details>
+<details class="faq-item">
+<summary>Is there parking?</summary>
+<p>Yes, there are 5 free parking spaces for coworking members.</p>
+</details>
+<details class="faq-item">
+<summary>Can I take calls?</summary>
+<p>We keep the shared area quiet, and there is a separate room for calls and video meetings.</p>
+</details>
+<details class="faq-item">
+<summary>What equipment is available?</summary>
+<p>Internet of around 100 Mbps, monitors, a printer and scanner (up to 10 pages a day, more by arrangement), a fridge, a microwave, coffee and tea. Everything is available to all members.</p>
+</details>
+<details class="faq-item">
+<summary>How many desks are there and what is the atmosphere like?</summary>
+<p>13 desks in a quiet space built for focused work. To keep it quiet, children and pets are not allowed.</p>
+</details>
+<details class="faq-item">
+<summary>Can I host my own event at your space?</summary>
+<p>Yes. There is a room for up to 15 people and a projector. Terms and pricing on request.</p>
+</details>
+<details class="faq-item">
+<summary>How do I find you?</summary>
+<p>Kazarmes iela 16B, Jelgava. The building has two entrances: ours is under the Jelgava Coworking Space sign; the other leads to our neighbours at Miniland. The nearest shops, Maxima and Citro, are about a 10-minute walk away.</p>
+</details>
 </div>
 </div>
 </section>
