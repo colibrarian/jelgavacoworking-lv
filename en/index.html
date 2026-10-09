@@ -205,7 +205,15 @@
       "name": "Can I come at any time?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "24/7 access, 7 days a week, is included in the Studio and Business packages; entry is by door code. Focus, Flow and the day pass are valid on weekdays from 9:00 to 18:00. Staff are usually on site from 10:00 to 18:00."
+        "text": "24/7 access, 7 days a week, is included in the Studio and Business packages; entry is by door code. If you just need one long night of work, take the 24-hour pass. Focus, Flow and the day pass are valid on weekdays from 9:00 to 18:00. Staff are usually on site from 10:00 to 18:00."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the 24-hour pass?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A one-off pass that gives you 24 hours of access in a row for €20. The 24 hours start at the time you choose when booking. Ideal when a deadline is burning or an urgent task needs non-stop work, night included. Door-code entry, a hot desk, internet, coffee and tea."
       }
     },
     {
@@ -218,7 +226,7 @@
     },
     {
       "@type": "Question",
-      "name": "Do I need to book a day pass in advance?",
+      "name": "Do I need to book a day pass or 24-hour pass in advance?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Yes, ideally at least a day ahead. In urgent cases, call or message us on WhatsApp: +371 2057 9106. We speak Latvian, Russian and English."
@@ -649,39 +657,37 @@ Work and business in one place
 </div>
 </div>
 <div class="extras">
-<!-- DAY PASS -->
-<div class="panel" style="margin-top:14px">
-<div class="kicker">
-
-
-Day pass
-</div>
-<div class="pricing-head" style="margin-top:6px">
-<div>
-<h2 style="margin:0 0 10px">
-
-
-Day pass — 15 €
-</h2>
-<p class="sub">
-
-
-Weekdays 9:00–18:00. Choose any available spot (hot desk) and work in a calm coworking environment.
-</p>
-</div>
-</div>
+<!-- DAY PASS & 24H PASS -->
+<div class="passes">
+<div class="panel pass">
+<div class="kicker">Day pass</div>
+<h2>Day pass</h2>
+<div class="pass-price">15 € <small>/ day</small></div>
+<p class="sub">Weekdays 9:00–18:00. Choose any available spot (hot desk) and work in a calm coworking environment.</p>
 <div class="row">
 <div class="pill">Mon–Fri, 9:00–18:00</div>
 <div class="pill">Hot desk</div>
 <div class="pill">Wi-Fi</div>
 <div class="pill">Unlimited coffee / tea</div>
 </div>
-<div class="row" style="margin-top:16px">
-<a class="btn btn-primary" data-topic="Day pass" href="#pieteikums">
-
-
-Submit a request
-</a>
+<div class="row pass-cta">
+<a class="btn" data-topic="Day pass" href="#pieteikums">Submit a request</a>
+</div>
+</div>
+<div class="panel pass pass-24">
+<div class="kicker">For urgent work</div>
+<h2>24-hour pass</h2>
+<div class="pass-price">20 € <small>/ 24 h</small></div>
+<p class="sub">For when a deadline is burning and you need to go all in, night included. The 24 hours start at the time you choose when booking. A one-off pass.</p>
+<div class="row">
+<div class="pill">24 hours in a row</div>
+<div class="pill">Door-code entry</div>
+<div class="pill">Hot desk</div>
+<div class="pill">Unlimited coffee / tea</div>
+</div>
+<div class="row pass-cta">
+<a class="btn btn-primary" data-topic="24h pass" href="#pieteikums">Book 24 hours</a>
+</div>
 </div>
 </div>
 <!-- MEETING ROOM -->
@@ -734,14 +740,18 @@ Book now
 </details>
 <details class="faq-item">
 <summary>Can I come at any time?</summary>
-<p>24/7 access, 7 days a week, is included in the Studio and Business packages; entry is by door code. Focus, Flow and the day pass are valid on weekdays from 9:00 to 18:00. Staff are usually on site from 10:00 to 18:00.</p>
+<p>24/7 access, 7 days a week, is included in the Studio and Business packages; entry is by door code. If you just need one long night of work, take the 24-hour pass. Focus, Flow and the day pass are valid on weekdays from 9:00 to 18:00. Staff are usually on site from 10:00 to 18:00.</p>
+</details>
+<details class="faq-item">
+<summary>What is the 24-hour pass?</summary>
+<p>A one-off pass that gives you 24 hours of access in a row for €20. The 24 hours start at the time you choose when booking. Ideal when a deadline is burning or an urgent task needs non-stop work, night included. Door-code entry, a hot desk, internet, coffee and tea.</p>
 </details>
 <details class="faq-item">
 <summary>Can I leave my things here?</summary>
 <p>There are no lockers. With the Business package you have your own fixed desk, and members leave their computers right on it. In the other packages desks are shared (hot desk), so please take your things with you at the end of the day.</p>
 </details>
 <details class="faq-item">
-<summary>Do I need to book a day pass in advance?</summary>
+<summary>Do I need to book a day pass or 24-hour pass in advance?</summary>
 <p>Yes, ideally at least a day ahead. In urgent cases, call or message us on WhatsApp: +371 2057 9106. We speak Latvian, Russian and English.</p>
 </details>
 <details class="faq-item">
@@ -845,6 +855,7 @@ Enquiry about (optional)
 
 Day pass
 </button>
+<button class="topic-tag" data-value="24h pass" type="button">24-hour pass</button>
 <button class="topic-tag" data-value="Meeting room" type="button">
 
 
