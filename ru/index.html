@@ -316,16 +316,6 @@
 }
   </script>
 <link rel="stylesheet" href="/assets/style.css" />
-<style>
-  /* FAQ */
-  .faq-list{ display:grid; gap:10px; margin-top:18px; max-width:860px; }
-  .faq-item{ border:1px solid var(--line, rgba(127,127,127,.25)); border-radius:14px; padding:0 18px; }
-  .faq-item summary{ cursor:pointer; list-style:none; position:relative; padding:16px 32px 16px 0; font-weight:500; line-height:1.4; }
-  .faq-item summary::-webkit-details-marker{ display:none; }
-  .faq-item summary::after{ content:"+"; position:absolute; right:0; top:12px; font-size:22px; color:var(--accent); }
-  .faq-item[open] summary::after{ content:"\2212"; }
-  .faq-item p{ margin:0 0 16px; color:var(--muted); line-height:1.7; }
-</style>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -359,8 +349,10 @@
 
 </a>
 </div>
+<button class="burger" type="button" aria-label="Меню" aria-expanded="false" aria-controls="mnav"><span></span><span></span><span></span></button>
 </div>
 </div>
+<div class="mnav" id="mnav"><div class="wrap mnav-inner"></div></div>
 </header>
 <main id="top">
 <!-- ══════════════════════════════════════
@@ -656,6 +648,7 @@ Jelgava Coworking Space — это больше, чем рабочее мест�
 </div>
 </div>
 </div>
+<div class="extras">
 <!-- DAY PASS -->
 <div class="panel" style="margin-top:14px">
 <div class="kicker">
@@ -720,6 +713,7 @@ Jelgava Coworking Space — это больше, чем рабочее мест�
 Забронировать
 
 </a>
+</div>
 </div>
 </div>
 </div>
@@ -795,6 +789,7 @@ Jelgava Coworking Space — это больше, чем рабочее мест�
 <p>Kazarmes iela 16B, Елгава. У здания два входа: наш — под вывеской Jelgava Coworking Space, второй ведёт к соседям в Miniland. Ближайшие магазины Maxima и Citro — примерно в 10 минутах пешком.</p>
 </details>
 </div>
+<button type="button" class="btn faq-more">Показать все вопросы</button>
 </div>
 </section>
 <!-- ══════════════════════════════════════
@@ -820,6 +815,7 @@ Jelgava Coworking Space — это больше, чем рабочее мест�
 <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Kazarmes%20iela%2016B%2C%20Jelgava&amp;output=embed" title="Jelgava Coworking — Karte">
 </iframe>
 </div>
+<a class="btn map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Kazarmes%20iela%2016B%2C%20Jelgava" rel="noopener" target="_blank">📍 Открыть в Google Maps</a>
 </div>
 <!-- Right: form -->
 <div class="panel" id="pieteikums">
@@ -1076,5 +1072,6 @@ Jelgava Coworking Space — это больше, чем рабочее мест�
 </svg>
 </a>
 </div>
+<script src="/assets/enhance.js" defer></script>
 </body>
 </html>
